@@ -14,7 +14,7 @@ const loadSearch = () => {
     }
     else {
 
-        fetch(`http://openlibrary.org/search.json?q=${loadText} `)
+        fetch(`https://openlibrary.org/search.json?q=${loadText} `)
             .then(response => response.json())
             .then(data => displayInput(data.docs));
 
